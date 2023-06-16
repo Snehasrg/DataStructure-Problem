@@ -8,7 +8,8 @@ namespace DatastructureProblems
         {
             Console.WriteLine("Welcome to Day6 Datastructure PracticeProblem");
             Console.WriteLine("Select any one option from \n 1.Generic Custom Linkedlist\n 2.Generic Class Custom Stack" +
-                              "\n 3.Generic Class Custom Queue\n 4.Builtin Linkedlist CRUD operation");
+                              "\n 3.Generic Class Custom Queue\n 4.Builtin Linkedlist CRUD operation" +
+                              "\n 5.Built in Stack CRUD operation");
             int operation = Convert.ToInt32(Console.ReadLine());
             switch (operation)
             {
@@ -51,6 +52,10 @@ namespace DatastructureProblems
 
                 case 4:
                     BuiltinLinkedListCRUD.LinkedList();
+                    break;
+
+                case 5:
+                    BuiltinStackCRUD.StackOperation();
                     break;
 
                 default:
