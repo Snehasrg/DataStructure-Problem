@@ -9,7 +9,8 @@ namespace DatastructureProblems
             Console.WriteLine("Welcome to Day6 Datastructure PracticeProblem");
             Console.WriteLine("Select any one option from \n 1.Generic Custom Linkedlist\n 2.Generic Class Custom Stack" +
                               "\n 3.Generic Class Custom Queue\n 4.Builtin Linkedlist CRUD operation" +
-                              "\n 5.Built in Stack CRUD operation\n 6.Builtin Queue CRUD operation");
+                              "\n 5.Built in Stack CRUD operation\n 6.Builtin Queue CRUD operation" +
+                              "\n 7.Insert elements in sorted(descending-order) LinkedList.");
             int operation = Convert.ToInt32(Console.ReadLine());
             switch (operation)
             {
@@ -60,6 +61,25 @@ namespace DatastructureProblems
 
                 case 6:
                     BuiltinQueueCRUD.QueueOperation();
+                    break;
+
+                case 7:
+                    SortedLinkedList list = new SortedLinkedList();
+
+                    // Insert elements in descending order
+                    list.Insert(5);
+                    list.Insert(3);
+                    list.Insert(1);
+
+                    // Display the initial LinkedList
+                    list.Display(); // Output: 5 3 1
+
+                    // Insert a new element
+                    list.Insert(4);
+
+                    // Display the updated LinkedList
+                    Console.WriteLine("Linkedlist Elements in Decending order are");
+                    list.Display(); // Output: 5 4 3 1
                     break;
 
                 default:
